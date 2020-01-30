@@ -13,12 +13,12 @@ app = Flask(__name__, instance_relative_config=True)
 # Account name
 account = 'storage312'
 # Azure Storage account access key 
-key ='XRitK+2jBrLGPmJXLVQNo8yNDz3ytjEzwYFlUCNQZd2YWb8xIFkok2zKrGU1UhaSQDJQgaK9/+HjLW4S1+44nA=='
+key ='/zS1FjwekwDGVaq75p73pEDwuIT3oZZ5bZFRNcyLzwQZjQ/5limq27Bdmp8UymsaYv+Cg5DnNbxcDQbOe5oqzQ=='
 # Container name
 container ='container312'
 
 
-blob_service = BlockBlobService(account_name='storage312', account_key='XRitK+2jBrLGPmJXLVQNo8yNDz3ytjEzwYFlUCNQZd2YWb8xIFkok2zKrGU1UhaSQDJQgaK9/+HjLW4S1+44nA==')
+blob_service = BlockBlobService(account_name='storage312', account_key='/zS1FjwekwDGVaq75p73pEDwuIT3oZZ5bZFRNcyLzwQZjQ/5limq27Bdmp8UymsaYv+Cg5DnNbxcDQbOe5oqzQ==')
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
