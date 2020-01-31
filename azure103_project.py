@@ -11,14 +11,14 @@ import string, random, requests
 app = Flask(__name__, instance_relative_config=True)
 
 # Account name
-account = 'storage312'
+account = 'storage3121'
 # Azure Storage account access key 
-key ='/zS1FjwekwDGVaq75p73pEDwuIT3oZZ5bZFRNcyLzwQZjQ/5limq27Bdmp8UymsaYv+Cg5DnNbxcDQbOe5oqzQ=='
+key ='U0m94QTcXaDWwccWcql+MwxxZw+c+cNRNrm4kaYAfpZ5SI0hfeAJGP0omxTs5zAJ6XeKhT/3+4GCr+vqf+BMWA=='
 # Container name
 container ='container312'
 
 
-blob_service = BlockBlobService(account_name='storage312', account_key='/zS1FjwekwDGVaq75p73pEDwuIT3oZZ5bZFRNcyLzwQZjQ/5limq27Bdmp8UymsaYv+Cg5DnNbxcDQbOe5oqzQ==')
+blob_service = BlockBlobService(account_name='storage3121', account_key='U0m94QTcXaDWwccWcql+MwxxZw+c+cNRNrm4kaYAfpZ5SI0hfeAJGP0omxTs5zAJ6XeKhT/3+4GCr+vqf+BMWA==')
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
