@@ -6,6 +6,6 @@ cd hostfiles
 sudo ufw allow 5000/tcp
 sudo apt-get update
 sudo apt-get install python-pip
-pip install azure. storage
+pip install azure.storage
 pip install flask
 Python azure103_project.py
