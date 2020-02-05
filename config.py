@@ -1,7 +1,7 @@
 [DEFAULT]
 # Account name
-account = storage3121
+account = 
 # Azure Storage account access key 
-key = ejqJbOmEyrGlqJ/vQCK2AXiMvQBLvbOaG85450SxYRw8wCp9HOccHjMAXVPH4ZjOccr8yoUz6DUbhBhL1MbSug==
+key = 
 # Container name
-container =container312
+container =
