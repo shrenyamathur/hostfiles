@@ -7,18 +7,22 @@ from flask import Flask, request, redirect, url_for, render_template
 from werkzeug import secure_filename
 from azure.storage.blob import *
 import string, random, requests
+import configparser
 
 app = Flask(__name__, instance_relative_config=True)
 
+Config = configparser.ConfigParser()
+Config.read("config.py")
+
 # Account name
-account = 'storage3121'
+account = Config.get('DEFAULT', 'account')
 # Azure Storage account access key 
-key ='U0m94QTcXaDWwccWcql+MwxxZw+c+cNRNrm4kaYAfpZ5SI0hfeAJGP0omxTs5zAJ6XeKhT/3+4GCr+vqf+BMWA=='
+key = Config.get('DEFAULT', 'key')
 # Container name
-container ='container312'
+container = Config.get('DEFAULT', 'container')
 
 
-blob_service = BlockBlobService(account_name='storage3121', account_key='U0m94QTcXaDWwccWcql+MwxxZw+c+cNRNrm4kaYAfpZ5SI0hfeAJGP0omxTs5zAJ6XeKhT/3+4GCr+vqf+BMWA==')
+blob_service = BlockBlobService(account_name=account, account_key=key)
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
