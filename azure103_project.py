@@ -17,9 +17,9 @@ Config.read("config.py")
 # Account name
 account = Config.get('DEFAULT', 'account')
 # Azure Storage account access key 
-key = Config.get('DEFAULT','key')
+key = Config.get('DEFAULT', 'key')
 # Container name
-container = Config.get('DEFAULT','container')
+container = Config.get('DEFAULT', 'container')
 
 
 blob_service = BlockBlobService(account_name=account, account_key=key)
@@ -34,7 +34,7 @@ def upload_file():
             blob_service.create_blob_from_stream(container, filename, file)
             
      except Exception:
-            print("Exception=" + Exception) 
+            print('Exception=' + Exception) 
             pass
      ref =  'http://'+ account + '.blob.core.windows.net/' + container + '/' + filename
          
