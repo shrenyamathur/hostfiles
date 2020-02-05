@@ -1,5 +1,5 @@
-# hostfiles
-Azure 103 PROJECT 
+# Set the VM up
+Steps to set up the VMs for you!
 
 
 For both the VMs, follow the steps to set them up :
