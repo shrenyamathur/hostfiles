@@ -1,17 +1,17 @@
 [DEFAULT]
 # Account name
-account = storage3121
+account =
 # Azure Storage account access key 
-key = 53riWu7meh9LAxy+NOPhe4mWWCg8fMlPkDTSIOfY9AhBQw0CkUc5/ItuGHJRcorlE5+YM1NBl8jlAea1r/u2NA==
+key = 
 # Container name
-container =container312
+container =
 #Name of the database user
-user=newuser@shrenserv
+user=
 #Server Password
-password=Password@
+password=
 #Hostname
-host=shrenserv.mysql.database.azure.com
+host=
 #Port number
-port=3306
+port=
 #Name of the database created
-database=db1
+database=
