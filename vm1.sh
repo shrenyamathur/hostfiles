@@ -8,4 +8,5 @@ sudo apt-get install python-pip
 pip install azure.storage
 pip install configparser
 pip install flask
+sudo nano config.py
 cd hostfiles && python azure103_project.py
