@@ -4,7 +4,7 @@
 # In[1]:
 import os
 from flask import Flask, request, redirect, url_for, render_template
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 from azure.storage.blob import *
 import string, random, requests
 import configparser
