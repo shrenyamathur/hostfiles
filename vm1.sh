@@ -10,4 +10,4 @@ pip install configparser
 pip install flask
 cd hostfiles
 sudo nano config.py
-cd hostfiles && python azure103_project.py
+python azure103_project.py
